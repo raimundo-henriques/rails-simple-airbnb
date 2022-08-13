@@ -1,6 +1,6 @@
 <img class="background-image" src="https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80" alt="">
 <div class="container d-flex flat-infos">
-  <div>
+  <div class="flat-details col-8">
     <div class="card bg-light m-3 p-3">
       <h3><%= @flat.name %></h3>
       <p><%= @flat.address %></p>
@@ -16,6 +16,7 @@
         <p class="card-text"><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
       </div>
     </div>
+    <%= link_to "Edit this flat", edit_flat_path(@flat), class:'btn btn-primary m-3' %>
   </div>
   <div class="booking card m-3 bg-light p-3">
     <h6>Book this place!</h6>

@@ -29,7 +29,15 @@
   top: -75px
  }
 
+ /* .flat-details {
+  flex-grow: 1;
+ } */
+
  .booking {
-  width: 400px;
+  width: 300px;
   height: 100%;
+ }
+
+ .card {
+  box-shadow: #00000017 4px 5px 10px 0px;
  }
