@@ -1,0 +1,26 @@
+<img class="background-image" src="https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80" alt="">
+<div class="container d-flex flat-infos">
+  <div>
+    <div class="card bg-light m-3 p-3">
+      <h3><%= @flat.name %></h3>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="card bg-light m-3 p-3">
+      <h4>A bit more about this flat...</h4>
+      <p><%= @flat.description %></p>
+    </div>
+    <div class="card bg-light m-3 p-3">
+      <h4>Details</h4>
+      <div class="d-flex">
+        <p class="card-text me-2"><i class="fa-solid fa-user-group"></i> <%= @flat.number_of_guests %></p>
+        <p class="card-text"><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+      </div>
+    </div>
+  </div>
+  <div class="booking card m-3 bg-light p-3">
+    <h6>Book this place!</h6>
+    <p class="btn btn-outline-secondary">From</p>
+    <p class="btn btn-outline-secondary">To</p>
+    <p class="btn btn-success">Book</p>
+  </div>
+</div>
