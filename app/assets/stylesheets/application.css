@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ .card {
+  min-height: 250px;
+  box-shadow: #00000017 4px 5px 10px 0px;
+ }
