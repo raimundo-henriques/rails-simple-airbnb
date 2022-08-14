@@ -14,7 +14,7 @@
  *= require_self
  */
  .square-card {
-  min-height: 250px;
+  min-height: 400px;
   box-shadow: #00000017 4px 5px 10px 0px;
  }
 
@@ -40,6 +40,12 @@
 
  .card {
   box-shadow: #00000017 4px 5px 10px 0px;
+ }
+
+ .card img {
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
  }
 
  .icons i {

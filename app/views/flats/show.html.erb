@@ -1,4 +1,8 @@
-<img class="background-image" src="https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80" alt="">
+<% if @flat.picture.nil? %>
+  <img class="background-image" src="https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80" alt="">
+<% else %>
+  <img class="background-image" src="<%= @flat.picture %>" alt="">
+<% end %>
 <div class="container d-flex flat-infos">
   <div class="flat-details col-8">
     <div class="card bg-light m-3 p-3">
