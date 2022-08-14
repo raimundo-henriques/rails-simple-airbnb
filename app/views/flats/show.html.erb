@@ -19,10 +19,31 @@
     <%= link_to "Edit this flat", edit_flat_path(@flat), class:'btn btn-primary m-3' %>
     <%= link_to "Delete this flat", flat_path(@flat), method: :delete, data: {confirm: "Delete #{@flat.name}?"}, class:'btn btn-outline-danger' %>
   </div>
-  <div class="booking card m-3 bg-light p-3">
-    <h6>Book this place!</h6>
-    <p class="btn btn-outline-secondary">From</p>
-    <p class="btn btn-outline-secondary">To</p>
-    <p class="btn btn-success">Book</p>
+  <div>
+    <div class="booking card m-3 bg-light p-3">
+      <h6>Book this place!</h6>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">From:</span>
+        </div>
+        <input type="date" class="form-control" aria-label="From" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">To:</span>
+        </div>
+        <input type="date" class="form-control" aria-label="To" aria-describedby="basic-addon1">
+      </div>
+      <p class="btn btn-success">Book</p>
+    </div>
+    <div class="card m-3 bg-light p-3 d-flex flex-row align-items-center justify-content-between">
+      <p class="m-0">Share</p>
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
+        <i class="fa-solid fa-square-envelope"></i>
+      </div>
+    </div>
   </div>
 </div>
